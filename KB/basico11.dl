@@ -1,0 +1,26 @@
+% Hay 1000 problemas disponibles
+problema(0..999).
+% Estan abiertos (disponibles) del 2 al 100
+abiertos(2..100).
+%%abiertos(2..2). % Para test
+
+% Ejercicios intentados (no lo ocupamos por lo pronto)
+intentados(501..999).
+
+% Numero de actividades que se preparan
+num_p(1..5).
+
+
+
+recursosAbiertos(Y) :- problema(Y), abiertos(Y).
+
+recursosDi(Y):- recursosAbiertos(Y).
+
+
+asigna_final(X,Y):-  num_p(X), recursosDi(Y), not otro(X,Y).
+otro(X,Y) :-  num_p(X), recursosDi(Y), recursosDi(Y1), 
+      asigna_final(X,Y1), Y !=Y1.
+
+:- asigna_final(X1,Y), asigna_final(X2,Y), num_p(X1), num_p(X2), X1!=X2,
+    recursosDi(Y).
+

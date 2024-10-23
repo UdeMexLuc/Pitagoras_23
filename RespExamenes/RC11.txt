@@ -1,0 +1,8 @@
+Ejercicio 1: SI
+Ejercicio 94: NO
+Ejercicio 97: SI
+Ejercicio 98: NO
+Ejercicio 99: SI
+Ejercicio 100: NO
+Ejercicio 400: NO
+Ejercicio 401: SI

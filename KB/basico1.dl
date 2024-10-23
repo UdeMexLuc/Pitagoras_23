@@ -1,0 +1,212 @@
+
+
+%% BDE de caracteristicas de las formulas
+% F es Id de formula, N valor asociado segun el predicado
+%num_conectivos(F, N).
+%usa_conectivo(F, C). % ejemplo C="&"
+%num_variables(F, N).
+%longitud_formula(F, N).
+%anidamiento(F, N).
+
+% Conectivos Formulas con un solo conectivo
+usa_solo_conectivos(X, Y) :- problema(X), usa_conectivo(X, Y),
+   num_conectivos(X,1).
+
+
+% Regla para combinación de conjunción (&) y disyunción (+)
+usa_solo_conectivos(X, "&+") :- problema(X), usa_conectivo(X, "&"),
+    usa_conectivo(X, "+").
+
+% Regla para combinación de conjunción (&) e implicación (>)
+usa_solo_conectivos(X, "&>") :- problema(X), usa_conectivo(X, "&"),
+   usa_conectivo(X, ">").
+
+% Regla para combinación de conjunción (&) y negación (-)
+usa_solo_conectivos(X, "&-") :- problema(X), usa_conectivo(X, "&"), 
+   usa_conectivo(X, "-").
+
+% Regla para combinación de disyunción (+) e implicación (>)
+usa_solo_conectivos(X, "+>") :- problema(X), usa_conectivo(X, "+"),
+  usa_conectivo(X, ">").
+
+% Regla para combinación de disyunción (+) y negación (-)
+usa_solo_conectivos(X, "+-") :- problema(X), usa_conectivo(X, "+"),
+   usa_conectivo(X, "-").
+
+% Regla para combinación de implicación (>) y negación (-)
+usa_solo_conectivos(X, ">-") :- problema(X), usa_conectivo(X, ">"), 
+   usa_conectivo(X, "-").
+
+% Regla para combinación de conjunción (&), disyunción (+) e implicación (>)
+usa_solo_conectivos(X, "&+>") :- problema(X), usa_conectivo(X, "&"),
+   usa_conectivo(X, "+"), usa_conectivo(X, ">").
+
+% Regla para combinación de conjunción (&), disyunción (+) y negación (-)
+usa_solo_conectivos(X, "&+-") :- problema(X), usa_conectivo(X, "&"), 
+   usa_conectivo(X, "+"), usa_conectivo(X, "-").
+
+% Regla para combinación de conjunción (&), implicación (>) y negación (-)
+usa_solo_conectivos(X, "&>-") :- problema(X), usa_conectivo(X, "&"), 
+  usa_conectivo(X, ">"), usa_conectivo(X, "-").
+
+% Regla para combinación de disyunción (+), implicación (>) y negación (-)
+usa_solo_conectivos(X, "+>-") :- problema(X), usa_conectivo(X, "+"), 
+  usa_conectivo(X, ">"), usa_conectivo(X, "-").
+
+% Regla para combinación de todos los conectivos: conjunción (&),
+% disyunción (+), implicación (>) y negación (-)
+usa_solo_conectivos(X, "&+>-") :- problema(X), usa_conectivo(X, "&"),
+   usa_conectivo(X, "+"), usa_conectivo(X, ">"),
+   usa_conectivo(X, "-").
+
+%%%
+
+
+% Reglas para ejercicios **fáciles**:
+% 1. **Fórmulas con solo 1 variable y un único conectivo**:
+ facil(F) :- num_variables(F, 1), num_conectivos(F, 1).
+ 
+
+%2. **Fórmulas con un nivel de anidamiento de 0 (fórmulas planas, 
+% sin anidamiento)**:
+ facil(F) :- anidamiento(F, 0).
+
+% 3. **Fórmulas con longitud menor o igual a 3 (simples)**:
+ facil(F) :- longitud_formula(F, L), L <= 3.
+
+% #### Reglas para ejercicios **intermedios**:
+% 1. **Fórmulas con entre 2 y 3 variables y dos conectivos**:
+ intermedio(F) :- num_variables(F, V), V >= 2, V <= 3,
+       num_conectivos(F, 2).
+   
+%2. **Fórmulas con un nivel de anidamiento de 1 y al menos 2 conectivos**:
+ intermedio(F) :- anidamiento(F, 1), num_conectivos(F, C), C >= 2.
+  
+
+% 3. **Fórmulas con longitud entre 4 y 6**:
+
+ intermedio(F) :- longitud_formula(F, L), L >= 4, L <= 6.
+   
+
+%#### Reglas para ejercicios **difíciles**:
+%1. **Fórmulas con más de 3 variables y más de 3 conectivos**:
+   dificil(F) :- num_variables(F, V), V > 3, num_conectivos(F, C), C > 3.
+
+% 2. **Fórmulas con un nivel de anidamiento mayor o igual a 2 y 
+%  al menos 3 conectivos**:
+   dificil(F) :- anidamiento(F, A), A >= 2, num_conectivos(F, C), C >= 3.
+
+% 3. **Fórmulas con longitud mayor o igual a 7**:
+ dificil(F) :- longitud_formula(F, L), L >= 7.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Se define el predicado `match/2` teniendo en 
+%cuenta tanto las habilidades del alumno como la clasificación de los 
+%problemas en "fáciles", "intermedios" o "difíciles", podemos incorporar
+% los predicados que califican al alumno como "bueno", "regular" o "malo",
+% así como la complejidad de los problemas basados en la anidación,
+% conectivos, y otros aspectos.
+
+% A continuación, se presentan las reglas ampliadas que definen el
+% predicado % match/` para asociar los ejercicios con los alumnos de
+% acuerdo a su  nivel de habilidad y la complejidad del ejercicio.
+
+% ### Reglas ampliadas para el predicado `match/2`:
+
+% #### Reglas para ejercicios "fuerte" (para alumnos "buenos"):
+
+%1. **Si el alumno es "bueno" y el problema es "difícil"**:
+ match(P, fuerte) :- problema(P), es(bueno), dificil(P), 
+                       anidamiento(P, Nivel), Nivel >= 2, 
+                       num_conectivos(P, NCon), NCon >= 3.
+
+%2. **Ejercicios con combinaciones complejas de conectivos para alumnos 
+% con buena habilidad en combinaciones de conectivos**:
+ match(P, fuerte) :- problema(P), es(bueno), 
+                       hab_combinacion_conectivos("&+-", Cal), Cal >= 8, 
+                       usa_solo_conectivos(P, "&+-"),
+                       anidamiento(P, Nivel), Nivel >= 2.
+
+%3. **Ejercicios con fórmulas largas para alumnos con habilidad en
+% manejar fórmulas extensas**:
+ match(P, fuerte) :- problema(P), es(bueno), 
+                       hab_formula_larga(7, Cal), Cal >= 7, 
+                       longitud_formula(P, L), L >= 7.
+%% pendientes
+match(P, fuerte):- problema(P), es(regular), intermedio(P).
+match(P, fuerte):- problema(P), es(malo), intermedio(P).
+
+% #### Reglas para ejercicios "regular" (para alumnos "regulares"):
+
+%1. **Si el alumno es "regular" y el problema es "intermedio"**:
+   match(P, regular) :- problema(P), es(regular), intermedio(P), 
+                        anidamiento(P, Nivel), Nivel = 1, 
+                        num_conectivos(P, NCon), NCon = 2.
+
+% 2. **Ejercicios con conectivos simples para alumnos con habilidad media
+% en conectivos simples**:
+   match(P, regular) :- problema(P), es(regular), 
+                        hab_combinacion_conectivos("&", Cal), Cal >= 6, 
+                        usa_solo_conectivos(P, "&"), 
+                        num_conectivos(P, NCon), NCon = 2.
+
+%3. **Ejercicios con fórmulas de longitud moderada para alumnos con 
+% habilidad intermedia en manejar fórmulas de longitud media**:
+
+   match(P, regular) :- problema(P), es(regular), 
+                     hab_formula_larga(5, Cal), Cal >= 6, 
+                     longitud_formula(P, L), L >= 5, L <= 6.
+
+%#### Reglas para ejercicios "débil" (para alumnos "malos"):
+
+% 1. **Si el alumno es "malo" y el problema es "fácil"**:
+   match(P, debil) :- problema(P), es(malo), facil(P), 
+                      anidamiento(P, Nivel), Nivel = 0, 
+                      num_conectivos(P, NCon), NCon = 1.
+
+%2. **Ejercicios con solo un conectivo de negación para alumnos con
+% habilidad baja en conectivos**:
+   match(P, debil) :- problema(P), es(malo), 
+                      hab_combinacion_conectivos("-", Cal), Cal < 5, 
+                      usa_solo_conectivos(P, "-"),
+                      num_conectivos(P, NCon), NCon = 1.
+
+%3. **Ejercicios con fórmulas cortas y pocas variables para alumnos 
+% con baja habilidad en manejar fórmulas más complejas**:
+   match(P, debil) :- problema(P), es(malo), 
+                      hab_formula_larga(3, Cal), Cal < 6, 
+                      longitud_formula(P, L), L <= 3.
+% Default
+ match(P, indeterminado) :- facil(P).
+
+%%%%%%%%%%%%
+
+% Hay 1000 problemas disponibles
+problema(0..999).
+% Estan abiertos (disponibles) del 2 al 100
+abiertos(2..100).
+%% abiertos(2..2). % Para test
+
+% Ejercicios intentados (no lo ocupamos por lo pronto)
+intentados(501..999).
+
+% Numero de actividades que se preparan
+num_p(1..5).
+
+
+
+recursosAbiertos(Y) :- problema(Y), abiertos(Y).
+
+recursosDi(Y):- recursosAbiertos(Y), match(Y, fuerte).
+
+
+asigna_final(X,Y):-  num_p(X), recursosDi(Y), not otro(X,Y).
+otro(X,Y) :-  num_p(X), recursosDi(Y), recursosDi(Y1), 
+      asigna_final(X,Y1), Y !=Y1.
+
+:- asigna_final(X1,Y), asigna_final(X2,Y), num_p(X1), num_p(X2), X1!=X2,
+    recursosDi(Y).
+
+

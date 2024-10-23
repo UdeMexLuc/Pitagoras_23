@@ -1,0 +1,287 @@
+
+Actividad [Evaluacion de Formula].1.
+
+Dada la siguiente formula logica:
+
+F = ((-a)&(-(-a)))&(e&((d>b)+(-d))).
+
+Y la siguiente interpretacion:
+
+I(a) = 1, I(b) = 0, I(d) = 1, I(e) = 1.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 1
+2. I(F) = 0
+
+
+La respuesta correcta es: I(F) = 0.
+
+Demostracion:
+
+I(a) = 1
+I((-a)) = 0
+I((-(-a))) = 1
+I(((-a)&(-(-a)))) = 0
+I(e) = 1
+I(d) = 1
+I(b) = 0
+I((d>b)) = 0
+I((-d)) = 0
+I(((d>b)+(-d))) = 0
+I((e&((d>b)+(-d)))) = 0
+I((((-a)&(-(-a)))&(e&((d>b)+(-d))))) = 0
+---
+
+
+Actividad [Evaluacion de Formula].90.
+
+Dada la siguiente formula logica:
+
+F = -(((c>f)&(-a))>((f+a)+(-c))).
+
+Y la siguiente interpretacion:
+
+I(a) = 1, I(c) = 0, I(f) = 0.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 0
+2. I(F) = 1
+
+
+La respuesta correcta es: I(F) = 0.
+
+Demostracion:
+
+I(c) = 0
+I(f) = 0
+I((c>f)) = 1
+I(a) = 1
+I((-a)) = 0
+I(((c>f)&(-a))) = 0
+I((f+a)) = 1
+I((-c)) = 1
+I(((f+a)+(-c))) = 1
+I((((c>f)&(-a))>((f+a)+(-c)))) = 1
+I((-(((c>f)&(-a))>((f+a)+(-c))))) = 0
+---
+
+
+Actividad [Evaluacion de Formula].97.
+
+Dada la siguiente formula logica:
+
+F = ((-(-c))&((a>c)>(d>b)))&(-(-d)).
+
+Y la siguiente interpretacion:
+
+I(a) = 0, I(b) = 0, I(c) = 1, I(d) = 1.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 0
+2. I(F) = 1
+
+
+La respuesta correcta es: I(F) = 0.
+
+Demostracion:
+
+I(c) = 1
+I((-c)) = 0
+I((-(-c))) = 1
+I(a) = 0
+I((a>c)) = 1
+I(d) = 1
+I(b) = 0
+I((d>b)) = 0
+I(((a>c)>(d>b))) = 0
+I(((-(-c))&((a>c)>(d>b)))) = 0
+I((-d)) = 0
+I((-(-d))) = 1
+I((((-(-c))&((a>c)>(d>b)))&(-(-d)))) = 0
+---
+
+
+Actividad [Evaluacion de Formula].98.
+
+Dada la siguiente formula logica:
+
+F = -(((b>a)&(b>e))+((-c)+(-c))).
+
+Y la siguiente interpretacion:
+
+I(a) = 0, I(b) = 0, I(c) = 1, I(e) = 1.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 0
+2. I(F) = 1
+
+
+La respuesta correcta es: I(F) = 0.
+
+Demostracion:
+
+I(b) = 0
+I(a) = 0
+I((b>a)) = 1
+I(e) = 1
+I((b>e)) = 1
+I(((b>a)&(b>e))) = 1
+I(c) = 1
+I((-c)) = 0
+I(((-c)+(-c))) = 0
+I((((b>a)&(b>e))+((-c)+(-c)))) = 1
+I((-(((b>a)&(b>e))+((-c)+(-c))))) = 0
+---
+
+
+Actividad [Evaluacion de Formula].99.
+
+Dada la siguiente formula logica:
+
+F = f&(e+(-e)).
+
+Y la siguiente interpretacion:
+
+I(e) = 1, I(f) = 0.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 1
+2. I(F) = 0
+
+
+La respuesta correcta es: I(F) = 0.
+
+Demostracion:
+
+I(f) = 0
+I(e) = 1
+I((-e)) = 0
+I((e+(-e))) = 1
+I((f&(e+(-e)))) = 0
+---
+
+
+Actividad [Evaluacion de Formula].100.
+
+Dada la siguiente formula logica:
+
+F = (((-b)+(-e))+((-e)&(-b)))+(((c+a)+d)+((-f)&(c&b))).
+
+Y la siguiente interpretacion:
+
+I(a) = 0, I(b) = 0, I(c) = 1, I(d) = 1, I(e) = 0, I(f) = 0.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 0
+2. I(F) = 1
+
+
+La respuesta correcta es: I(F) = 1.
+
+Demostracion:
+
+I(b) = 0
+I((-b)) = 1
+I(e) = 0
+I((-e)) = 1
+I(((-b)+(-e))) = 1
+I(((-e)&(-b))) = 1
+I((((-b)+(-e))+((-e)&(-b)))) = 1
+I(c) = 1
+I(a) = 0
+I((c+a)) = 1
+I(d) = 1
+I(((c+a)+d)) = 1
+I(f) = 0
+I((-f)) = 1
+I((c&b)) = 0
+I(((-f)&(c&b))) = 0
+I((((c+a)+d)+((-f)&(c&b)))) = 1
+I(((((-b)+(-e))+((-e)&(-b)))+(((c+a)+d)+((-f)&(c&b))))) = 1
+---
+
+
+Actividad [Evaluacion de Formula].400.
+
+Dada la siguiente formula logica:
+
+F = -(-e).
+
+Y la siguiente interpretacion:
+
+I(e) = 0.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 0
+2. I(F) = 1
+
+
+La respuesta correcta es: I(F) = 0.
+
+Demostracion:
+
+I(e) = 0
+I((-e)) = 1
+I((-(-e))) = 0
+---
+
+
+Actividad [Evaluacion de Formula].401.
+
+Dada la siguiente formula logica:
+
+F = -(-(-(-f))).
+
+Y la siguiente interpretacion:
+
+I(f) = 1.
+
+Evalue la interpretacion I de la formula dada F si es 1 o 0.
+
+Cambia * por tu respuesta.
+Posibles respuestas:
+
+1. I(F) = 0
+2. I(F) = 1
+
+
+La respuesta correcta es: I(F) = 1.
+
+Demostracion:
+
+I(f) = 1
+I((-f)) = 0
+I((-(-f))) = 1
+I((-(-(-f)))) = 0
+I((-(-(-(-f))))) = 1
+---
+
+

@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Para representar las habilidades de los alumnos, podemos utilizar una base %de datos extensional (BDE) que incluya predicados que evalúan las 
+%capacidades de los estudiantes en diversos aspectos de la lógica 
+%proposicional. Cada predicado puede reflejar una habilidad específica,
+% como la capacidad para resolver problemas que involucren ciertos 
+%conectivos o niveles de anidamiento.
+
+% califs de sus 2 ultimas actividades
+% calif de la penultima actividad (0) es 7
+calif_act(0,7).
+% calif de la ultima actividad (1) es 8
+calif_act(1,8).
+
+% Habilidades para resolver problemas con diferentes niveles de anidamiento
+% anidamiento 0 habilidad 9 (escala 10)
+hab_nivel_anidamiento(0, 9).
+hab_nivel_anidamiento(1, 8).
+hab_nivel_anidamiento(2, 6).
+hab_nivel_anidamiento(3, 5).
+
+% Habilidades para resolver problemas con diferentes combinaciones de
+% conectivos
+hab_combinacion_conectivos("&>", 7).
+hab_combinacion_conectivos("&+-", 9).
+hab_combinacion_conectivos(">", 6).
+hab_combinacion_conectivos("+-", 5).
+
+% Habilidades para manejar fórmulas con diferentes números de variables
+hab_num_variables(1, 9).
+hab_num_variables(2, 8).
+hab_num_variables(3, 7).
+hab_num_variables(4, 6).
+
+% Habilidades para interpretar fórmulas con diferentes interpretaciones
+hab_interpretacion(2, 9).
+hab_interpretacion(3, 7).
+hab_interpretacion(4, 5).
+
+% Habilidades para manejar fórmulas largas
+hab_formula_larga(5, 8).
+hab_formula_larga(7, 6).
+hab_formula_larga(10, 4).
+
+% Habilidades específicas de conectivos
+hab_negacion_solo(8).
+hab_implicacion_solo(6). 
+hab_conjuncion_solo(6). 
+hab_disyuncion_solo(6). 
+
+%%
+
+
+% #### Reglas para calificar al alumno como "bueno":
+
+% 1. **Si el alumno tiene altas calificaciones en sus últimas actividades
+% (>= 8) y buenas habilidades en anidamiento bajo (0 o 1)**:
+
+es(bueno) :- calif_act(0, Cal0), Cal0 >= 8, calif_act(1, Cal1), Cal1 >= 8, 
+            hab_nivel_anidamiento(0, H0), H0 >= 8,
+            hab_nivel_anidamiento(1, H1), H1 >= 7.
+  
+
+% 2. **Si el alumno tiene buena habilidad en combinar varios conectivos**:
+ es(bueno) :- hab_combinacion_conectivos("&+-", H), H >= 8.
+
+% 3. **Si el alumno tiene buena habilidad para manejar fórmulas largas y 
+% resolver problemas con más de 2 variables**:
+ es(bueno) :- hab_formula_larga(7, H), H >= 7, 
+        hab_num_variables(3, HV), HV >= 7.
+
+%#### Reglas para calificar al alumno como "regular":
+
+% 1. **Si el alumno tiene calificaciones promedio (entre 6 y 7) 
+% en sus últimas actividades y habilidades intermedias en conectivos**:
+ es(regular) :- calif_act(0, Cal0), Cal0 >= 6, Cal0 < 8, 
+            calif_act(1, Cal1), Cal1 >= 6, Cal1 < 8,
+            hab_combinacion_conectivos("+-", H), H >= 5, H < 8,
+            not es(bueno).
+
+% 2. **Si el alumno tiene habilidades intermedias en anidamiento de 
+% nivel 2**:
+
+  es(regular) :- hab_nivel_anidamiento(2, H), H >= 5, H < 7,
+            not es(bueno).
+
+% 3. **Si el alumno tiene habilidades intermedias en el manejo de 
+% fórmulas de longitud moderada**:
+ es(regular) :- hab_formula_larga(5, H), H >= 5, H < 7,
+            not es(bueno).
+ 
+
+% #### Reglas para calificar al alumno como "malo":
+
+% 1. **Si el alumno tiene calificaciones bajas (< 6) en sus últimas 
+% actividades**:
+es(malo) :- calif_act(0, Cal0), Cal0 < 6, calif_act(1, Cal1), Cal1 < 6,
+            not es (regular).
+
+
+% 2. **Si el alumno tiene bajas habilidades en manejar fórmulas con 3 o 
+% más variables**:
+es(malo) :- hab_num_variables(3, HV), HV < 6,
+            not es(regular).
+
+%3 Si el alumno tiene baja habilidad en resolver problemas que 
+% involucran conectivos específicos como negación o implicación:
+es(malo) :- hab_negacion_solo(H), H < 6,
+            not es(regular).
+es(malo) :- hab_implicacion_solo(H), H < 6,
+            not es(regular).
+
+% Defalut
+es(indeterminado) :- not es(bueno), not es(regular), not es(malo).
+
