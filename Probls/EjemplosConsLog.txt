@@ -1,0 +1,9592 @@
+Problemas de consecuencia logica.
+ 
+ --------- Caso #  0
+ 
+{
+  (b+a)
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  1
+ 
+{
+  (b+b)
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  2
+ 
+{
+  ((-c)&(-c))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  3
+ 
+{
+  ((c>b)>(-c))
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  4
+ 
+{
+  (-(b>c))
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  5
+ 
+{
+  (c&c)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  6
+ 
+{
+  (c>a)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  7
+ 
+{
+  (d&a)
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  8
+ 
+{
+  d
+} |=  (c+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  9
+ 
+{
+  b
+} |=  (c&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  10
+ 
+{
+  (c&c)
+} |=  ((-d)&(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  11
+ 
+{
+  (-(a>b))
+} |=  (-(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  12
+ 
+{
+  (-(c+c))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  13
+ 
+{
+  ((-d)+(-d))
+} |=  (-(a>d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  14
+ 
+{
+  ((c+d)>(-d))
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  15
+ 
+{
+  (a&a)
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  16
+ 
+{
+  (c+c)
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  17
+ 
+{
+  (-a)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  18
+ 
+{
+  (d+c)
+} |=  (a+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  19
+ 
+{
+  a
+} |=  (-(d+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  20
+ 
+{
+  (b+a)
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  21
+ 
+{
+  ((-b)&(-a))
+} |=  (d>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  22
+ 
+{
+  (c>b)
+} |=  (a>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  23
+ 
+{
+  (-(d&b))
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  24
+ 
+{
+  b
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  25
+ 
+{
+  (d>a)
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  26
+ 
+{
+  (d&d)
+} |=  (a>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  27
+ 
+{
+  (d+b)
+} |=  ((b+c)+(c>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  28
+ 
+{
+  (b>c)
+} |=  (-(c+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  29
+ 
+{
+  (d+a)
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  30
+ 
+{
+  (d+d)
+} |=  (c&c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  31
+ 
+{
+  (-(b>b))
+} |=  ((b>a)&(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  32
+ 
+{
+  b
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  33
+ 
+{
+  (-(c&a))
+} |=  (a+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  34
+ 
+{
+  (c>a)
+} |=  (-(a>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  35
+ 
+{
+  (-b)
+} |=  (b&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  36
+ 
+{
+  (b&b)
+} |=  ((c&b)>(b+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  37
+ 
+{
+  c
+} |=  (c+c)
+Si es consecuencia logica
+ 
+ --------- Caso #  38
+ 
+{
+  (-(d+d))
+} |=  (-(b&b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  39
+ 
+{
+  ((-a)+(-a))
+} |=  (c+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  40
+ 
+{
+  d
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+d evalua a  1
+ 
+ --------- Caso #  41
+ 
+{
+  a
+} |=  ((d>b)+(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  42
+ 
+{
+  (-d)
+} |=  (-(b&c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  43
+ 
+{
+  (d&a)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  44
+ 
+{
+  ((-c)+(-c))
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  45
+ 
+{
+  (a>d)
+} |=  (-(c&c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  46
+ 
+{
+  (b>b)
+} |=  (-(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+ 
+ --------- Caso #  47
+ 
+{
+  ((-c)&(-c))
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  48
+ 
+{
+  d
+} |=  (d&d)
+Si es consecuencia logica
+ 
+ --------- Caso #  49
+ 
+{
+  (a+c)
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  50
+ 
+{
+  c
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  51
+ 
+{
+  a
+} |=  (b>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  52
+ 
+{
+  (b>c)
+} |=  ((d>b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  53
+ 
+{
+  (a&c)
+} |=  (d>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  54
+ 
+{
+  ((b>d)&(-b))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  55
+ 
+{
+  ((-c)+(-c))
+} |=  (d>c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  56
+ 
+{
+  (-(c>c))
+} |=  ((-b)>(d>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  57
+ 
+{
+  ((b&d)>(d&b))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  58
+ 
+{
+  ((-a)+(-a))
+} |=  (-a)
+Si es consecuencia logica
+ 
+ --------- Caso #  59
+ 
+{
+  (a>a)
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  60
+ 
+{
+  (-(b&b))
+} |=  (-b)
+Si es consecuencia logica
+ 
+ --------- Caso #  61
+ 
+{
+  ((-d)+(-c))
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  62
+ 
+{
+  (-(b&c))
+} |=  ((-d)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  63
+ 
+{
+  (-c)
+} |=  ((-b)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  64
+ 
+{
+  ((-c)&(-c))
+} |=  ((-c)&(c&c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+ 
+ --------- Caso #  65
+ 
+{
+  (d&a)
+} |=  (a&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  66
+ 
+{
+  ((-a)+(-b))
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  67
+ 
+{
+  (-(d+c))
+} |=  (d+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  68
+ 
+{
+  (c>a)
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  69
+ 
+{
+  ((-a)>(-a))
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  70
+ 
+{
+  (-(a+a))
+} |=  ((-a)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  71
+ 
+{
+  (-(d+b))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  72
+ 
+{
+  d
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  73
+ 
+{
+  b
+} |=  ((c>c)&(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  74
+ 
+{
+  (-b)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  75
+ 
+{
+  b
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  76
+ 
+{
+  ((c&b)+(-b))
+} |=  (d+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  77
+ 
+{
+  (-(d+d))
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  78
+ 
+{
+  ((c+d)>(-d))
+} |=  ((-c)&(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  79
+ 
+{
+  (-(c+c))
+} |=  ((-b)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  80
+ 
+{
+  (c+c)
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  81
+ 
+{
+  ((-a)>(-a))
+} |=  (a>d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  82
+ 
+{
+  (-(-a))
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  83
+ 
+{
+  ((c&c)+(-d))
+} |=  (d>b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  84
+ 
+{
+  (-(d+d))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  85
+ 
+{
+  ((d>b)+(-b))
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  86
+ 
+{
+  ((a>a)>(-a))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+ 
+ --------- Caso #  87
+ 
+{
+  b
+} |=  ((b>d)>(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  88
+ 
+{
+  (a+a)
+} |=  (b&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  89
+ 
+{
+  (a&b)
+} |=  (b>d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  90
+ 
+{
+  a
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  91
+ 
+{
+  (-(c>a))
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  92
+ 
+{
+  (d&a)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  93
+ 
+{
+  (d&d)
+} |=  (a>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  94
+ 
+{
+  (-(a&b))
+} |=  ((-d)&(c&c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  95
+ 
+{
+  ((-b)>(d>b))
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  96
+ 
+{
+  (-(b>b))
+} |=  ((b&d)>(d&b))
+Si es consecuencia logica
+ 
+ --------- Caso #  97
+ 
+{
+  (b+c)
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  98
+ 
+{
+  (a+d)
+} |=  (a+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  99
+ 
+{
+  ((-b)+(-b))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  100
+ 
+{
+  (-(d>b))
+} |=  ((a>a)&(d>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  101
+ 
+{
+  (d+b)
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  102
+ 
+{
+  (b&a)
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  103
+ 
+{
+  ((-d)+(-c))
+} |=  ((-a)>(c>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  104
+ 
+{
+  (d&a)
+} |=  (c&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  105
+ 
+{
+  (c+c)
+} |=  (c+c)
+Si es consecuencia logica
+ 
+ --------- Caso #  106
+ 
+{
+  (c&d)
+} |=  ((-b)+(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  107
+ 
+{
+  a
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  108
+ 
+{
+  (-(d+d))
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  109
+ 
+{
+  (b>a)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  110
+ 
+{
+  (c+c)
+} |=  (b>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  111
+ 
+{
+  ((-a)>(a&a))
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  112
+ 
+{
+  (d&b)
+} |=  (a&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  113
+ 
+{
+  (-a)
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  114
+ 
+{
+  (b+b)
+} |=  (-(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  115
+ 
+{
+  (-(b>b))
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  116
+ 
+{
+  ((-c)>(-c))
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+ 
+ --------- Caso #  117
+ 
+{
+  c
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  118
+ 
+{
+  (-(d+d))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  119
+ 
+{
+  (c&a)
+} |=  ((a+a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  120
+ 
+{
+  (d&d)
+} |=  ((a+a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  121
+ 
+{
+  a
+} |=  (a+d)
+Si es consecuencia logica
+ 
+ --------- Caso #  122
+ 
+{
+  (c&d)
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  123
+ 
+{
+  (b&d)
+} |=  (-(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  124
+ 
+{
+  (a>a)
+} |=  ((-c)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  125
+ 
+{
+  (-(d+b))
+} |=  (d+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  126
+ 
+{
+  d
+} |=  (-(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  127
+ 
+{
+  (a>a)
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  128
+ 
+{
+  (b&b)
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  129
+ 
+{
+  (-(c&c))
+} |=  ((a&b)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  130
+ 
+{
+  (b>d)
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  131
+ 
+{
+  (d>d)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  132
+ 
+{
+  (a&d)
+} |=  ((c+d)>(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  133
+ 
+{
+  (-(-a))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  134
+ 
+{
+  (b>b)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  135
+ 
+{
+  (-(c>c))
+} |=  (-(b&a))
+Si es consecuencia logica
+ 
+ --------- Caso #  136
+ 
+{
+  (-(b+d))
+} |=  ((-a)&(b+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  137
+ 
+{
+  (-a)
+} |=  (d+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  138
+ 
+{
+  a
+} |=  ((d>b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  139
+ 
+{
+  ((a&b)>(-a))
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  140
+ 
+{
+  (d>a)
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  141
+ 
+{
+  ((a+a)&(-a))
+} |=  (d>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  142
+ 
+{
+  b
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  143
+ 
+{
+  ((c>b)>(-c))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  144
+ 
+{
+  ((-c)+(-a))
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  145
+ 
+{
+  ((-b)>(-b))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  146
+ 
+{
+  b
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  147
+ 
+{
+  ((-b)>(d+d))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  148
+ 
+{
+  c
+} |=  (d+c)
+Si es consecuencia logica
+ 
+ --------- Caso #  149
+ 
+{
+  (a+d)
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  150
+ 
+{
+  (c&b)
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  151
+ 
+{
+  (b+c)
+} |=  (-(b>d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  152
+ 
+{
+  c
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  153
+ 
+{
+  (d>c)
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  154
+ 
+{
+  d
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  155
+ 
+{
+  ((d>b)>(b>b))
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  156
+ 
+{
+  ((b>a)&(-a))
+} |=  ((b>d)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  157
+ 
+{
+  ((-b)&(-a))
+} |=  ((-b)>(d+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  158
+ 
+{
+  (a+d)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  159
+ 
+{
+  (b+b)
+} |=  (c+d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  160
+ 
+{
+  (-(b>b))
+} |=  (d+d)
+Si es consecuencia logica
+ 
+ --------- Caso #  161
+ 
+{
+  (a>a)
+} |=  ((-c)&(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  162
+ 
+{
+  (d>d)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  163
+ 
+{
+  (b&b)
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  164
+ 
+{
+  ((d>d)+(b>b))
+} |=  (-(b&b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  165
+ 
+{
+  (b>b)
+} |=  (d+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  166
+ 
+{
+  ((-d)&(c+d))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  167
+ 
+{
+  c
+} |=  ((-c)&(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  168
+ 
+{
+  ((-c)>(-d))
+} |=  (a>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  169
+ 
+{
+  (-(b&b))
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+ 
+ --------- Caso #  170
+ 
+{
+  ((-b)&(-c))
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  171
+ 
+{
+  (c&d)
+} |=  ((c>b)>(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  172
+ 
+{
+  (b+c)
+} |=  (-(c>d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  173
+ 
+{
+  (-(b&b))
+} |=  (c&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  174
+ 
+{
+  ((b+c)+(c>b))
+} |=  (-(c+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  175
+ 
+{
+  c
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  176
+ 
+{
+  (-(d>c))
+} |=  (d+d)
+Si es consecuencia logica
+ 
+ --------- Caso #  177
+ 
+{
+  (-d)
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  178
+ 
+{
+  (c+a)
+} |=  ((a+a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  179
+ 
+{
+  (d+d)
+} |=  ((c+c)&(a+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  180
+ 
+{
+  b
+} |=  ((-c)&(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  181
+ 
+{
+  (a+a)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  182
+ 
+{
+  (-(c>c))
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  183
+ 
+{
+  ((d>b)+(-d))
+} |=  (-(c&c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  184
+ 
+{
+  (-(b+b))
+} |=  ((-c)+(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  185
+ 
+{
+  ((c+d)>(-d))
+} |=  (b+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  186
+ 
+{
+  a
+} |=  ((-c)>(c+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  187
+ 
+{
+  ((b>d)>(-b))
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  188
+ 
+{
+  b
+} |=  (-(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  189
+ 
+{
+  (-(b+a))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  190
+ 
+{
+  (-c)
+} |=  ((-c)&(c&c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+ 
+ --------- Caso #  191
+ 
+{
+  ((-d)+(-d))
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  192
+ 
+{
+  (-c)
+} |=  (d&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  193
+ 
+{
+  (b&b)
+} |=  ((-c)+(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  194
+ 
+{
+  (b>a)
+} |=  ((-d)+(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  195
+ 
+{
+  ((-c)>(-c))
+} |=  (a>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  196
+ 
+{
+  (d>b)
+} |=  (d+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  197
+ 
+{
+  c
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  198
+ 
+{
+  ((a>a)>(-a))
+} |=  ((-c)>(c+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  199
+ 
+{
+  ((-b)+(-b))
+} |=  (c&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  200
+ 
+{
+  (d>d)
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  201
+ 
+{
+  (d+d)
+} |=  (-(b+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  202
+ 
+{
+  a
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  203
+ 
+{
+  (b&d)
+} |=  (-(c>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  204
+ 
+{
+  (a+b)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  205
+ 
+{
+  ((-a)+(-a))
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  206
+ 
+{
+  ((c&b)&(b+b))
+} |=  (b+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  207
+ 
+{
+  d
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  208
+ 
+{
+  (-a)
+} |=  ((-a)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  209
+ 
+{
+  (c>a)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  210
+ 
+{
+  ((a>a)>(-a))
+} |=  (b>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  211
+ 
+{
+  ((-d)&(c+d))
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  212
+ 
+{
+  (b&b)
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  213
+ 
+{
+  ((-c)>(-b))
+} |=  (c+d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  214
+ 
+{
+  ((-b)&(-c))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  215
+ 
+{
+  ((-b)+(-b))
+} |=  (b+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  216
+ 
+{
+  (-(b&b))
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  217
+ 
+{
+  ((d>b)>(b>b))
+} |=  (-(d>d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  218
+ 
+{
+  (d+a)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  219
+ 
+{
+  (-(a&c))
+} |=  (-(c+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  220
+ 
+{
+  (d+d)
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  221
+ 
+{
+  c
+} |=  (a&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  222
+ 
+{
+  (-(a>b))
+} |=  a
+Si es consecuencia logica
+ 
+ --------- Caso #  223
+ 
+{
+  ((-c)+(-c))
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  224
+ 
+{
+  a
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  225
+ 
+{
+  (-a)
+} |=  (-(a>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+ 
+ --------- Caso #  226
+ 
+{
+  (c&d)
+} |=  (c&c)
+Si es consecuencia logica
+ 
+ --------- Caso #  227
+ 
+{
+  (d>a)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  228
+ 
+{
+  (b>b)
+} |=  ((-d)&(c+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  229
+ 
+{
+  (d&a)
+} |=  ((d>b)+(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  230
+ 
+{
+  (a&d)
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  231
+ 
+{
+  (a+c)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  232
+ 
+{
+  c
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  233
+ 
+{
+  ((-b)+(-b))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  234
+ 
+{
+  ((-c)&(-c))
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  235
+ 
+{
+  ((b&b)+(c>b))
+} |=  (-(b>d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  236
+ 
+{
+  (c>c)
+} |=  (a+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  237
+ 
+{
+  ((-c)&(c&c))
+} |=  (c&b)
+Si es consecuencia logica
+ 
+ --------- Caso #  238
+ 
+{
+  (b>a)
+} |=  (a+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  239
+ 
+{
+  (c+d)
+} |=  (c+d)
+Si es consecuencia logica
+ 
+ --------- Caso #  240
+ 
+{
+  (-c)
+} |=  (-(d&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  241
+ 
+{
+  a
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  242
+ 
+{
+  (b>d)
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  243
+ 
+{
+  ((c+c)&(a+a))
+} |=  (-(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  244
+ 
+{
+  c
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  245
+ 
+{
+  (c>b)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  246
+ 
+{
+  b
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  247
+ 
+{
+  (d>b)
+} |=  (-(c&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  248
+ 
+{
+  ((-a)+(-b))
+} |=  (d&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  249
+ 
+{
+  c
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  250
+ 
+{
+  (a&a)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  251
+ 
+{
+  ((-c)&(-c))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  252
+ 
+{
+  a
+} |=  ((c&b)>(b+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  253
+ 
+{
+  (c>c)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  254
+ 
+{
+  ((-b)+(-b))
+} |=  (-(b+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  255
+ 
+{
+  (a+b)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  256
+ 
+{
+  (-(c>b))
+} |=  (-(c&c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  257
+ 
+{
+  (d+c)
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  258
+ 
+{
+  (-(-d))
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  259
+ 
+{
+  (-a)
+} |=  (-(d>c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  260
+ 
+{
+  ((-c)+(-c))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  261
+ 
+{
+  (b&d)
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  262
+ 
+{
+  c
+} |=  (-(d&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  263
+ 
+{
+  ((-d)&(-b))
+} |=  (d+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  264
+ 
+{
+  ((-d)+(-c))
+} |=  (a+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  265
+ 
+{
+  (c&a)
+} |=  (-(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  266
+ 
+{
+  b
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  267
+ 
+{
+  (a&d)
+} |=  (-(b+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  268
+ 
+{
+  (b+b)
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  269
+ 
+{
+  (c>b)
+} |=  ((a>a)&(d>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  270
+ 
+{
+  ((-a)>(-a))
+} |=  (d&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  271
+ 
+{
+  a
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  272
+ 
+{
+  b
+} |=  ((-b)&(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  273
+ 
+{
+  c
+} |=  (b+c)
+Si es consecuencia logica
+ 
+ --------- Caso #  274
+ 
+{
+  (a+b)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  275
+ 
+{
+  (-(b&b))
+} |=  ((b>a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  276
+ 
+{
+  (d>b)
+} |=  ((c>d)+(d>d))
+Si es consecuencia logica
+ 
+ --------- Caso #  277
+ 
+{
+  (a+d)
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  278
+ 
+{
+  d
+} |=  (-(a+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  279
+ 
+{
+  (b>b)
+} |=  (b&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  280
+ 
+{
+  b
+} |=  (c>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  281
+ 
+{
+  (a>c)
+} |=  (a>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  282
+ 
+{
+  (b&a)
+} |=  (c+a)
+Si es consecuencia logica
+ 
+ --------- Caso #  283
+ 
+{
+  (-c)
+} |=  ((a+b)+(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  284
+ 
+{
+  (d>c)
+} |=  ((a+b)+(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  285
+ 
+{
+  (c&c)
+} |=  ((-c)+(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  286
+ 
+{
+  ((-c)+(-c))
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  287
+ 
+{
+  (d+d)
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  288
+ 
+{
+  (c+c)
+} |=  (a&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  289
+ 
+{
+  a
+} |=  (d>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  290
+ 
+{
+  ((-a)>(-a))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  291
+ 
+{
+  ((d>d)+(b>b))
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  292
+ 
+{
+  (d>a)
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  293
+ 
+{
+  (c&c)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  294
+ 
+{
+  (-(-b))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  295
+ 
+{
+  c
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  296
+ 
+{
+  (-(a>d))
+} |=  (-d)
+Si es consecuencia logica
+ 
+ --------- Caso #  297
+ 
+{
+  (b&c)
+} |=  (-(d>d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  298
+ 
+{
+  ((c>d)+(d>d))
+} |=  (b&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  299
+ 
+{
+  (c+c)
+} |=  (c&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  300
+ 
+{
+  ((-d)+(-d))
+} |=  (-(c+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  301
+ 
+{
+  (b&b)
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  302
+ 
+{
+  (-(d>d))
+} |=  (a+d)
+Si es consecuencia logica
+ 
+ --------- Caso #  303
+ 
+{
+  (-(-c))
+} |=  (-(d>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  304
+ 
+{
+  b
+} |=  (c&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  305
+ 
+{
+  (b>c)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  306
+ 
+{
+  (c>b)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  307
+ 
+{
+  d
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  308
+ 
+{
+  (b>b)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  309
+ 
+{
+  ((d>d)+(b>b))
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  310
+ 
+{
+  (c&d)
+} |=  (-(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  311
+ 
+{
+  (a+a)
+} |=  ((b>c)+(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  312
+ 
+{
+  (-(c+c))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  313
+ 
+{
+  (a+d)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  314
+ 
+{
+  ((c+d)>(-d))
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  315
+ 
+{
+  (d&d)
+} |=  ((-a)>(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  316
+ 
+{
+  (-b)
+} |=  (d>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  317
+ 
+{
+  (b>c)
+} |=  (-(a&d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  318
+ 
+{
+  (c&b)
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  319
+ 
+{
+  (-(a&c))
+} |=  (-(b&b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  320
+ 
+{
+  (-(c>d))
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  321
+ 
+{
+  ((d&d)&(c&c))
+} |=  ((-c)&(c&c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  322
+ 
+{
+  ((a>a)&(d>a))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  323
+ 
+{
+  b
+} |=  (d>c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  324
+ 
+{
+  (d>b)
+} |=  (c>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  325
+ 
+{
+  (b&b)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  326
+ 
+{
+  (c&c)
+} |=  (c&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  327
+ 
+{
+  (-(a&c))
+} |=  (c+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  328
+ 
+{
+  (-a)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+ 
+ --------- Caso #  329
+ 
+{
+  (-(-d))
+} |=  (c+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  330
+ 
+{
+  b
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  331
+ 
+{
+  (-(d>b))
+} |=  ((-b)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  332
+ 
+{
+  (c>b)
+} |=  ((-c)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  333
+ 
+{
+  ((a>a)>(-a))
+} |=  ((b&c)>(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  334
+ 
+{
+  (-(d+d))
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+d evalua a  0
+ 
+ --------- Caso #  335
+ 
+{
+  (a>a)
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  336
+ 
+{
+  (-(d>d))
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  337
+ 
+{
+  (-(b>c))
+} |=  (-(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  338
+ 
+{
+  (d>a)
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  339
+ 
+{
+  a
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  340
+ 
+{
+  a
+} |=  ((c&b)>(b+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  341
+ 
+{
+  (-a)
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  342
+ 
+{
+  (-(b&b))
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  343
+ 
+{
+  (-(a+b))
+} |=  (c&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  344
+ 
+{
+  (-(b>b))
+} |=  (-(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  345
+ 
+{
+  ((-c)&(c&c))
+} |=  ((-c)>(c+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  346
+ 
+{
+  (a&d)
+} |=  (a&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  347
+ 
+{
+  c
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  348
+ 
+{
+  (c&d)
+} |=  (b&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  349
+ 
+{
+  ((b>d)>(-b))
+} |=  (-(b+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  350
+ 
+{
+  (-(a>a))
+} |=  (-(a>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  351
+ 
+{
+  b
+} |=  (-(b+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  352
+ 
+{
+  (d>a)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  353
+ 
+{
+  ((b>a)&(-a))
+} |=  ((c>c)&(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  354
+ 
+{
+  (d>a)
+} |=  ((d>b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  355
+ 
+{
+  (d+d)
+} |=  (a+d)
+Si es consecuencia logica
+ 
+ --------- Caso #  356
+ 
+{
+  ((-d)+(-a))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  357
+ 
+{
+  (-(a&c))
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  358
+ 
+{
+  (-(a&c))
+} |=  (c+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  359
+ 
+{
+  (-a)
+} |=  (d&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  360
+ 
+{
+  ((-b)+(-a))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  361
+ 
+{
+  c
+} |=  (a+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  362
+ 
+{
+  ((-c)&(c&c))
+} |=  (c+c)
+Si es consecuencia logica
+ 
+ --------- Caso #  363
+ 
+{
+  (d+d)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  364
+ 
+{
+  a
+} |=  (-(c>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  365
+ 
+{
+  (b>c)
+} |=  ((-a)>(c>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  366
+ 
+{
+  ((c&b)>(b+b))
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  367
+ 
+{
+  (-(d+c))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  368
+ 
+{
+  (c>c)
+} |=  (d+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  369
+ 
+{
+  c
+} |=  (c&c)
+Si es consecuencia logica
+ 
+ --------- Caso #  370
+ 
+{
+  ((-b)>(-c))
+} |=  (a+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  371
+ 
+{
+  a
+} |=  (d>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  372
+ 
+{
+  ((d>b)+(-b))
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  373
+ 
+{
+  (-(a+c))
+} |=  (-(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  374
+ 
+{
+  ((-d)+(-a))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  375
+ 
+{
+  ((b&b)+(c>b))
+} |=  (-(b>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  376
+ 
+{
+  (b&d)
+} |=  ((-c)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  377
+ 
+{
+  ((a>a)>(-a))
+} |=  (b&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  378
+ 
+{
+  (b>b)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  379
+ 
+{
+  ((-a)>(a&a))
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  380
+ 
+{
+  (a>a)
+} |=  (-(b&b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  381
+ 
+{
+  (-(b>a))
+} |=  (b&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  382
+ 
+{
+  (c+c)
+} |=  ((-d)&(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  383
+ 
+{
+  a
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  384
+ 
+{
+  (-(d>d))
+} |=  ((b>d)+(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  385
+ 
+{
+  ((-d)>(-a))
+} |=  ((c&b)&(b+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  386
+ 
+{
+  (c>c)
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  387
+ 
+{
+  d
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  388
+ 
+{
+  (-(-b))
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+ 
+ --------- Caso #  389
+ 
+{
+  d
+} |=  (b>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  390
+ 
+{
+  b
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  391
+ 
+{
+  (-a)
+} |=  ((-a)>(c>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  392
+ 
+{
+  a
+} |=  (a&a)
+Si es consecuencia logica
+ 
+ --------- Caso #  393
+ 
+{
+  (-(c+a))
+} |=  ((c>c)&(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  394
+ 
+{
+  (-(a+a))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  395
+ 
+{
+  (c&d)
+} |=  (a&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  396
+ 
+{
+  ((-d)&(c+d))
+} |=  (a&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  397
+ 
+{
+  b
+} |=  ((-a)>(d>d))
+Si es consecuencia logica
+ 
+ --------- Caso #  398
+ 
+{
+  (c>b)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  399
+ 
+{
+  (c+d)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  400
+ 
+{
+  ((-b)&(-a))
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  401
+ 
+{
+  (-(b&b))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  402
+ 
+{
+  (a&a)
+} |=  (-(a>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+ 
+ --------- Caso #  403
+ 
+{
+  c
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  404
+ 
+{
+  ((b>d)+(-d))
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  405
+ 
+{
+  c
+} |=  ((-a)>(c>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  406
+ 
+{
+  d
+} |=  (b>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  407
+ 
+{
+  (c>c)
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  408
+ 
+{
+  a
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  409
+ 
+{
+  (b+a)
+} |=  (c+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  410
+ 
+{
+  (-d)
+} |=  (b+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  411
+ 
+{
+  (d&d)
+} |=  (c&d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  412
+ 
+{
+  (b+b)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  413
+ 
+{
+  c
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  414
+ 
+{
+  ((-c)&(c&c))
+} |=  ((-d)&(c+d))
+Si es consecuencia logica
+ 
+ --------- Caso #  415
+ 
+{
+  (b>b)
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  416
+ 
+{
+  b
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  417
+ 
+{
+  b
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  418
+ 
+{
+  (a&a)
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+ 
+ --------- Caso #  419
+ 
+{
+  ((a>a)>(-a))
+} |=  (a+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  420
+ 
+{
+  (-(b&c))
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  421
+ 
+{
+  d
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  422
+ 
+{
+  c
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  423
+ 
+{
+  (a+c)
+} |=  ((-c)&(c&c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  424
+ 
+{
+  (-(b&b))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+ 
+ --------- Caso #  425
+ 
+{
+  ((a>a)>(-a))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  426
+ 
+{
+  (b&d)
+} |=  (-(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  427
+ 
+{
+  ((-c)&(-c))
+} |=  ((-a)+(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  428
+ 
+{
+  (-(d+a))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  429
+ 
+{
+  ((-a)+(-a))
+} |=  (-(c&c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  430
+ 
+{
+  (-a)
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  431
+ 
+{
+  (b&b)
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  432
+ 
+{
+  (-(d+d))
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  433
+ 
+{
+  b
+} |=  (b&b)
+Si es consecuencia logica
+ 
+ --------- Caso #  434
+ 
+{
+  (-(d>d))
+} |=  (-(c>c))
+Si es consecuencia logica
+ 
+ --------- Caso #  435
+ 
+{
+  (-(c>c))
+} |=  (d+c)
+Si es consecuencia logica
+ 
+ --------- Caso #  436
+ 
+{
+  ((a+a)&(-a))
+} |=  (b+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  437
+ 
+{
+  (a+d)
+} |=  ((-a)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  438
+ 
+{
+  (-c)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  439
+ 
+{
+  (-a)
+} |=  (a>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  440
+ 
+{
+  ((-a)>(c>a))
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  441
+ 
+{
+  (c&d)
+} |=  (-(d>d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  442
+ 
+{
+  (-(d+d))
+} |=  ((-c)&(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  443
+ 
+{
+  (-c)
+} |=  (c>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  444
+ 
+{
+  a
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  445
+ 
+{
+  (c+a)
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  446
+ 
+{
+  c
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  447
+ 
+{
+  (a>d)
+} |=  (b>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  448
+ 
+{
+  (-(c+d))
+} |=  (-d)
+Si es consecuencia logica
+ 
+ --------- Caso #  449
+ 
+{
+  (d+d)
+} |=  (d>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  450
+ 
+{
+  (d>a)
+} |=  (d>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  451
+ 
+{
+  b
+} |=  ((-a)&(b+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  452
+ 
+{
+  (-(-b))
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  453
+ 
+{
+  (b>c)
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  454
+ 
+{
+  (-(b>b))
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  455
+ 
+{
+  (b&a)
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  456
+ 
+{
+  a
+} |=  ((-d)&(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  457
+ 
+{
+  b
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  458
+ 
+{
+  (a&d)
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  459
+ 
+{
+  (a+b)
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  460
+ 
+{
+  (c+a)
+} |=  ((-b)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  461
+ 
+{
+  ((-b)>(c>b))
+} |=  (-(a+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  462
+ 
+{
+  (b>b)
+} |=  ((-d)+(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  463
+ 
+{
+  b
+} |=  (c+d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  464
+ 
+{
+  (a>b)
+} |=  ((-b)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  465
+ 
+{
+  d
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  466
+ 
+{
+  (-(b&b))
+} |=  ((-b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  467
+ 
+{
+  ((-a)+(-a))
+} |=  ((-a)+(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  468
+ 
+{
+  (b&b)
+} |=  ((-a)>(a&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  469
+ 
+{
+  ((-b)+(a>a))
+} |=  ((-c)>(c+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  470
+ 
+{
+  b
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  471
+ 
+{
+  (d>a)
+} |=  (c>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  472
+ 
+{
+  (c&a)
+} |=  (-(a+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  473
+ 
+{
+  (-(b+a))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  474
+ 
+{
+  ((b>d)+(-d))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  475
+ 
+{
+  (-d)
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  476
+ 
+{
+  ((-d)&(c+d))
+} |=  (-(c&c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  477
+ 
+{
+  (a&c)
+} |=  ((c>c)&(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  478
+ 
+{
+  a
+} |=  a
+Si es consecuencia logica
+ 
+ --------- Caso #  479
+ 
+{
+  ((b>d)&(-b))
+} |=  (a+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  480
+ 
+{
+  ((-c)&(c&c))
+} |=  (-(d+d))
+Si es consecuencia logica
+ 
+ --------- Caso #  481
+ 
+{
+  (-(c&c))
+} |=  ((c>c)&(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  482
+ 
+{
+  ((-a)>(-a))
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  483
+ 
+{
+  (d+a)
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  484
+ 
+{
+  ((b>d)+(-d))
+} |=  (-(b&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  485
+ 
+{
+  (-b)
+} |=  ((-a)>(a&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  486
+ 
+{
+  (-(c+c))
+} |=  ((b>d)>(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  487
+ 
+{
+  (d+d)
+} |=  (a>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  488
+ 
+{
+  (-(d>d))
+} |=  (a>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  489
+ 
+{
+  (b&a)
+} |=  (b>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  490
+ 
+{
+  ((d>b)>(b>b))
+} |=  ((-c)+(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  491
+ 
+{
+  (-(d+a))
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  492
+ 
+{
+  ((c+c)&(a+a))
+} |=  (-(c>d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  493
+ 
+{
+  (c&c)
+} |=  ((-d)+(d+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  494
+ 
+{
+  (-(c>c))
+} |=  (a+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  495
+ 
+{
+  d
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  496
+ 
+{
+  (d+d)
+} |=  (d+a)
+Si es consecuencia logica
+ 
+ --------- Caso #  497
+ 
+{
+  (-(c&d))
+} |=  (-(d>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  498
+ 
+{
+  (c+c)
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  499
+ 
+{
+  (d>a)
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  500
+ 
+{
+  (-(c&c))
+} |=  ((a+a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  501
+ 
+{
+  (a+b)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  502
+ 
+{
+  (-(b>a))
+} |=  (c&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  503
+ 
+{
+  b
+} |=  (a+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  504
+ 
+{
+  (-(b>b))
+} |=  ((d>b)>(b>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  505
+ 
+{
+  ((-b)>(d+d))
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  506
+ 
+{
+  (-(d>c))
+} |=  (d+a)
+Si es consecuencia logica
+ 
+ --------- Caso #  507
+ 
+{
+  a
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  508
+ 
+{
+  (c+c)
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  509
+ 
+{
+  a
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  510
+ 
+{
+  (a&d)
+} |=  ((-a)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  511
+ 
+{
+  (-(d+a))
+} |=  ((-c)>(c&d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  512
+ 
+{
+  ((b>d)>(-b))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  513
+ 
+{
+  (a&c)
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  514
+ 
+{
+  ((-a)>(-d))
+} |=  (-(c>b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  515
+ 
+{
+  ((-c)+(-c))
+} |=  ((-b)>(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  516
+ 
+{
+  (-(c>a))
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  517
+ 
+{
+  (-(d>d))
+} |=  (a&a)
+Si es consecuencia logica
+ 
+ --------- Caso #  518
+ 
+{
+  b
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  519
+ 
+{
+  (c>a)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  520
+ 
+{
+  a
+} |=  (c&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  521
+ 
+{
+  ((-c)&(c&c))
+} |=  ((a>a)&(d>a))
+Si es consecuencia logica
+ 
+ --------- Caso #  522
+ 
+{
+  (-(b+b))
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  523
+ 
+{
+  (-(b>d))
+} |=  (-(d+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  524
+ 
+{
+  d
+} |=  (-(b&b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  525
+ 
+{
+  ((-a)>(-a))
+} |=  (d&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  526
+ 
+{
+  a
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  527
+ 
+{
+  (-a)
+} |=  (-(c+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  528
+ 
+{
+  (-c)
+} |=  ((-a)>(a&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  529
+ 
+{
+  (-(b&c))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  530
+ 
+{
+  (b>d)
+} |=  ((-c)>(c&d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  531
+ 
+{
+  ((c&b)&(b+b))
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  532
+ 
+{
+  (-b)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  533
+ 
+{
+  b
+} |=  (b+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  534
+ 
+{
+  (d>d)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  535
+ 
+{
+  (d>b)
+} |=  ((b+b)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  536
+ 
+{
+  (b&b)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  537
+ 
+{
+  (b>c)
+} |=  (a+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  538
+ 
+{
+  (-(d>d))
+} |=  (b+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  539
+ 
+{
+  b
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  540
+ 
+{
+  (-(b+d))
+} |=  (-(a+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  541
+ 
+{
+  c
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  542
+ 
+{
+  (a&a)
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  543
+ 
+{
+  b
+} |=  (b&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  544
+ 
+{
+  ((c&b)&(b+b))
+} |=  (d+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  545
+ 
+{
+  (c+c)
+} |=  ((-b)>(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  546
+ 
+{
+  (-d)
+} |=  ((-c)&(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  547
+ 
+{
+  ((a>a)>(-a))
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  548
+ 
+{
+  ((-d)&(-b))
+} |=  (-b)
+Si es consecuencia logica
+ 
+ --------- Caso #  549
+ 
+{
+  c
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  550
+ 
+{
+  ((-d)+(d+b))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  551
+ 
+{
+  (-(a+a))
+} |=  (b&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  552
+ 
+{
+  (a>c)
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  553
+ 
+{
+  a
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  554
+ 
+{
+  b
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  555
+ 
+{
+  (a+d)
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  556
+ 
+{
+  (a+d)
+} |=  (a+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  557
+ 
+{
+  (d+c)
+} |=  (d>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  558
+ 
+{
+  ((c+c)&(a+a))
+} |=  (c&c)
+Si es consecuencia logica
+ 
+ --------- Caso #  559
+ 
+{
+  c
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  560
+ 
+{
+  (c&c)
+} |=  (-(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  561
+ 
+{
+  (a>d)
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  562
+ 
+{
+  (b&a)
+} |=  (d+a)
+Si es consecuencia logica
+ 
+ --------- Caso #  563
+ 
+{
+  (-(d+d))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  564
+ 
+{
+  (a+a)
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  565
+ 
+{
+  ((-d)>(-a))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  566
+ 
+{
+  ((-c)>(-d))
+} |=  ((-b)>(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  567
+ 
+{
+  ((-a)+(-a))
+} |=  (a>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  568
+ 
+{
+  c
+} |=  (-(c+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  569
+ 
+{
+  ((b>d)+(-d))
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  570
+ 
+{
+  (d>c)
+} |=  ((c&c)+(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  571
+ 
+{
+  b
+} |=  ((-b)+(a>a))
+Si es consecuencia logica
+ 
+ --------- Caso #  572
+ 
+{
+  d
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  573
+ 
+{
+  (a&b)
+} |=  (b>d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  574
+ 
+{
+  b
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  575
+ 
+{
+  (-(c+c))
+} |=  ((-b)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  576
+ 
+{
+  (c&d)
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  577
+ 
+{
+  (c+c)
+} |=  (b&c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  578
+ 
+{
+  ((-d)+(-d))
+} |=  (-(d>d))
+No es consecuencia logica
+Contraejemplo
+d evalua a  0
+ 
+ --------- Caso #  579
+ 
+{
+  (-(b>b))
+} |=  (-b)
+Si es consecuencia logica
+ 
+ --------- Caso #  580
+ 
+{
+  ((b>d)>(-b))
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  581
+ 
+{
+  d
+} |=  ((-c)&(c&c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  582
+ 
+{
+  ((-b)>(-b))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+ 
+ --------- Caso #  583
+ 
+{
+  a
+} |=  (b+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  584
+ 
+{
+  ((-a)>(a&a))
+} |=  ((b+c)+(c>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  585
+ 
+{
+  (-d)
+} |=  (-(d+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  586
+ 
+{
+  (c&a)
+} |=  ((-b)>(d>b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  587
+ 
+{
+  (d+b)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  588
+ 
+{
+  ((-b)+(-b))
+} |=  ((c&b)&(b+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  589
+ 
+{
+  (a>c)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  590
+ 
+{
+  (b>c)
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  591
+ 
+{
+  c
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  592
+ 
+{
+  (-(b&b))
+} |=  (a&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  593
+ 
+{
+  (c>c)
+} |=  ((c>d)+(d>d))
+Si es consecuencia logica
+ 
+ --------- Caso #  594
+ 
+{
+  (-(c>c))
+} |=  (-(b>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  595
+ 
+{
+  (b>b)
+} |=  (a&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  596
+ 
+{
+  a
+} |=  (-(b+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  597
+ 
+{
+  ((a+a)&(-a))
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  598
+ 
+{
+  (c&c)
+} |=  (b>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  599
+ 
+{
+  (a>b)
+} |=  ((c>c)&(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  600
+ 
+{
+  a
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  601
+ 
+{
+  b
+} |=  ((a+b)+(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  602
+ 
+{
+  ((-d)+(-c))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  603
+ 
+{
+  ((-c)>(c&d))
+} |=  (-(c&d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  604
+ 
+{
+  a
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+ 
+ --------- Caso #  605
+ 
+{
+  (-(d+d))
+} |=  ((d>b)+(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  606
+ 
+{
+  (b&d)
+} |=  ((b>d)+(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  607
+ 
+{
+  (a>b)
+} |=  (-(c+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  608
+ 
+{
+  ((-c)&(-c))
+} |=  ((-c)>(c+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  609
+ 
+{
+  (-(d>d))
+} |=  ((-b)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  610
+ 
+{
+  (-(b>b))
+} |=  (d&d)
+Si es consecuencia logica
+ 
+ --------- Caso #  611
+ 
+{
+  ((a>a)>(-a))
+} |=  ((a&b)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  612
+ 
+{
+  (c>c)
+} |=  ((c&b)+(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  613
+ 
+{
+  ((-c)&(-c))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+ 
+ --------- Caso #  614
+ 
+{
+  (b&b)
+} |=  (a+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  615
+ 
+{
+  (a>d)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  616
+ 
+{
+  (a>a)
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  617
+ 
+{
+  ((b&b)+(c>b))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  618
+ 
+{
+  ((-a)>(a&a))
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  619
+ 
+{
+  (a&c)
+} |=  ((c+d)>(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  620
+ 
+{
+  d
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  621
+ 
+{
+  a
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  622
+ 
+{
+  a
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+ 
+ --------- Caso #  623
+ 
+{
+  (d+d)
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  624
+ 
+{
+  (-(a+a))
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  625
+ 
+{
+  ((b>d)+(-d))
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  626
+ 
+{
+  ((-a)+(-a))
+} |=  ((-b)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  627
+ 
+{
+  c
+} |=  (-(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  628
+ 
+{
+  (a+c)
+} |=  ((-b)&(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  629
+ 
+{
+  (-(-b))
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  630
+ 
+{
+  (-b)
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  631
+ 
+{
+  (-b)
+} |=  (c&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  632
+ 
+{
+  (-b)
+} |=  ((-c)>(c+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  633
+ 
+{
+  (-(b+b))
+} |=  ((c&b)>(b+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  634
+ 
+{
+  (a&a)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  635
+ 
+{
+  (b+c)
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  636
+ 
+{
+  c
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  637
+ 
+{
+  ((-d)>(-a))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  638
+ 
+{
+  d
+} |=  (c&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  639
+ 
+{
+  (c+d)
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  640
+ 
+{
+  (-d)
+} |=  ((b&c)>(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  641
+ 
+{
+  (-(c>d))
+} |=  ((-d)+(d+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  642
+ 
+{
+  (-(c+c))
+} |=  (b&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  643
+ 
+{
+  (b>c)
+} |=  (a>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  644
+ 
+{
+  (a+b)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  645
+ 
+{
+  a
+} |=  ((-c)&(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  646
+ 
+{
+  (-(a+b))
+} |=  (-(b&b))
+Si es consecuencia logica
+ 
+ --------- Caso #  647
+ 
+{
+  (-(d+d))
+} |=  (d>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  648
+ 
+{
+  c
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  649
+ 
+{
+  (-(b+b))
+} |=  (-(b>c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  650
+ 
+{
+  (d+d)
+} |=  ((-a)>(a&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  651
+ 
+{
+  ((-b)>(d>b))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  652
+ 
+{
+  d
+} |=  (-(d+c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  653
+ 
+{
+  b
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  654
+ 
+{
+  (d+b)
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  655
+ 
+{
+  (-(b>b))
+} |=  (-c)
+Si es consecuencia logica
+ 
+ --------- Caso #  656
+ 
+{
+  (-(b+b))
+} |=  (-(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  657
+ 
+{
+  (a+b)
+} |=  ((a+a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  658
+ 
+{
+  (-(-c))
+} |=  (-(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  659
+ 
+{
+  b
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  660
+ 
+{
+  ((-d)+(-d))
+} |=  ((a>a)&(d>a))
+Si es consecuencia logica
+ 
+ --------- Caso #  661
+ 
+{
+  ((-b)&(-a))
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  662
+ 
+{
+  c
+} |=  ((-d)+(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  663
+ 
+{
+  (c+a)
+} |=  (c&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  664
+ 
+{
+  a
+} |=  ((-b)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  665
+ 
+{
+  c
+} |=  ((b>a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  666
+ 
+{
+  (d>d)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  667
+ 
+{
+  (-(d&a))
+} |=  (a>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  668
+ 
+{
+  (-(b>a))
+} |=  (-(b+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  669
+ 
+{
+  (a>c)
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  670
+ 
+{
+  (-c)
+} |=  (-(b&b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  671
+ 
+{
+  (c&c)
+} |=  ((b>d)>(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  672
+ 
+{
+  (c+c)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  673
+ 
+{
+  ((-c)&(c&c))
+} |=  (-(b>d))
+Si es consecuencia logica
+ 
+ --------- Caso #  674
+ 
+{
+  ((-a)&(-c))
+} |=  ((-c)>(c+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  675
+ 
+{
+  ((-c)>(-d))
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  676
+ 
+{
+  (-(c+c))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  677
+ 
+{
+  (d+c)
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  678
+ 
+{
+  b
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  679
+ 
+{
+  (a+b)
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  680
+ 
+{
+  (-(b+d))
+} |=  ((c+c)&(a+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  681
+ 
+{
+  ((-c)&(-c))
+} |=  (b>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  682
+ 
+{
+  c
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  683
+ 
+{
+  d
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  684
+ 
+{
+  (-(-d))
+} |=  (d&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  685
+ 
+{
+  (a&a)
+} |=  (d>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  686
+ 
+{
+  (b&c)
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  687
+ 
+{
+  (-(a+b))
+} |=  ((-b)>(d>b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  688
+ 
+{
+  (-(a>a))
+} |=  (b&b)
+Si es consecuencia logica
+ 
+ --------- Caso #  689
+ 
+{
+  (-(-c))
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  690
+ 
+{
+  a
+} |=  ((b>d)&(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  691
+ 
+{
+  ((d>b)>(b>b))
+} |=  (a>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  692
+ 
+{
+  (c+a)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  693
+ 
+{
+  c
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  694
+ 
+{
+  (b&c)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  695
+ 
+{
+  (d>d)
+} |=  (d+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  696
+ 
+{
+  (-a)
+} |=  (b>d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  697
+ 
+{
+  d
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  698
+ 
+{
+  b
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  699
+ 
+{
+  (b&b)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  700
+ 
+{
+  ((-d)&(c+d))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  701
+ 
+{
+  (a>a)
+} |=  (a>d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  702
+ 
+{
+  ((-c)>(-d))
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  703
+ 
+{
+  (d>a)
+} |=  (d>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  704
+ 
+{
+  (-(b&b))
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  705
+ 
+{
+  ((a&d)+(-d))
+} |=  (-(b&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  706
+ 
+{
+  (b&d)
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  707
+ 
+{
+  (b&d)
+} |=  (-(b&b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  708
+ 
+{
+  ((-b)&(-c))
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  709
+ 
+{
+  (b&b)
+} |=  ((c>d)+(d>d))
+Si es consecuencia logica
+ 
+ --------- Caso #  710
+ 
+{
+  b
+} |=  (c>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  711
+ 
+{
+  d
+} |=  ((-b)>(d>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  712
+ 
+{
+  ((d&d)&(c&c))
+} |=  (d&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  713
+ 
+{
+  (a>d)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  714
+ 
+{
+  b
+} |=  ((-b)&(-c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  715
+ 
+{
+  (a+a)
+} |=  (-(c+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  716
+ 
+{
+  (d&d)
+} |=  (c&c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  717
+ 
+{
+  (a+c)
+} |=  (-(a>b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  718
+ 
+{
+  (d+c)
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  719
+ 
+{
+  ((d>b)+(-d))
+} |=  (c&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  720
+ 
+{
+  (b+b)
+} |=  (b+a)
+Si es consecuencia logica
+ 
+ --------- Caso #  721
+ 
+{
+  ((b>d)+(-d))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  722
+ 
+{
+  (c&b)
+} |=  (d+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  723
+ 
+{
+  ((-c)+(-c))
+} |=  ((-b)>(c>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  724
+ 
+{
+  ((c>c)&(-c))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  725
+ 
+{
+  (c&c)
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  726
+ 
+{
+  ((-b)+(a>a))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  727
+ 
+{
+  (-(d&a))
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  728
+ 
+{
+  (d&a)
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  729
+ 
+{
+  ((-c)+(-a))
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  730
+ 
+{
+  (b>a)
+} |=  ((-b)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  731
+ 
+{
+  d
+} |=  ((-d)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  732
+ 
+{
+  (c>a)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  733
+ 
+{
+  (a>a)
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  734
+ 
+{
+  (-(-d))
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  735
+ 
+{
+  (d+d)
+} |=  (-(d+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  736
+ 
+{
+  d
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  737
+ 
+{
+  (a>c)
+} |=  (b+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  738
+ 
+{
+  (-(c+b))
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  739
+ 
+{
+  c
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  740
+ 
+{
+  c
+} |=  ((a+a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  741
+ 
+{
+  d
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  742
+ 
+{
+  d
+} |=  (c>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  743
+ 
+{
+  (c&d)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  744
+ 
+{
+  ((-c)&(-c))
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  745
+ 
+{
+  ((b&d)>(-b))
+} |=  (b+c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  746
+ 
+{
+  b
+} |=  (-(d+d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  747
+ 
+{
+  ((-d)+(d+b))
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  748
+ 
+{
+  (a+b)
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  749
+ 
+{
+  (-b)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  750
+ 
+{
+  d
+} |=  ((-b)+(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  751
+ 
+{
+  a
+} |=  (d>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  752
+ 
+{
+  (c>c)
+} |=  (-(b>d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  753
+ 
+{
+  (-(-d))
+} |=  ((d>b)+(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  754
+ 
+{
+  d
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  755
+ 
+{
+  (a&b)
+} |=  b
+Si es consecuencia logica
+ 
+ --------- Caso #  756
+ 
+{
+  (-(a+a))
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  757
+ 
+{
+  (a+a)
+} |=  ((a+a)&(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+ 
+ --------- Caso #  758
+ 
+{
+  (c&b)
+} |=  ((a&b)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  759
+ 
+{
+  (-(-c))
+} |=  (c&d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  760
+ 
+{
+  (-(b>b))
+} |=  (d+b)
+Si es consecuencia logica
+ 
+ --------- Caso #  761
+ 
+{
+  a
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  762
+ 
+{
+  ((c>c)>(-c))
+} |=  (-(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+ 
+ --------- Caso #  763
+ 
+{
+  c
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  764
+ 
+{
+  ((-a)&(-c))
+} |=  ((a>a)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  765
+ 
+{
+  ((-b)+(-a))
+} |=  ((c>b)>(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  766
+ 
+{
+  (b+b)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  767
+ 
+{
+  (b>b)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+ 
+ --------- Caso #  768
+ 
+{
+  (a>a)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  769
+ 
+{
+  c
+} |=  ((c&b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  770
+ 
+{
+  (-d)
+} |=  ((a>a)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  771
+ 
+{
+  ((-a)+(-a))
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  772
+ 
+{
+  (a+a)
+} |=  (d>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  773
+ 
+{
+  d
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  774
+ 
+{
+  ((-a)>(-a))
+} |=  (c+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  775
+ 
+{
+  ((-c)>(-c))
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  776
+ 
+{
+  ((a>a)>(-a))
+} |=  ((-a)>(a&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+ 
+ --------- Caso #  777
+ 
+{
+  (-(-b))
+} |=  (-(c+c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  778
+ 
+{
+  (d+b)
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  779
+ 
+{
+  (-(c>c))
+} |=  b
+Si es consecuencia logica
+ 
+ --------- Caso #  780
+ 
+{
+  (d+d)
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  781
+ 
+{
+  d
+} |=  (d&d)
+Si es consecuencia logica
+ 
+ --------- Caso #  782
+ 
+{
+  b
+} |=  (b&b)
+Si es consecuencia logica
+ 
+ --------- Caso #  783
+ 
+{
+  c
+} |=  (a>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  784
+ 
+{
+  (-(d+c))
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  785
+ 
+{
+  a
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  786
+ 
+{
+  ((-b)>(-a))
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  787
+ 
+{
+  (d+b)
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  788
+ 
+{
+  (-d)
+} |=  ((-d)+(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  789
+ 
+{
+  ((c>c)>(-c))
+} |=  (-(d&b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  790
+ 
+{
+  (c>b)
+} |=  (-(b>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  791
+ 
+{
+  (a&b)
+} |=  a
+Si es consecuencia logica
+ 
+ --------- Caso #  792
+ 
+{
+  ((-b)+(-b))
+} |=  (b>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  793
+ 
+{
+  (a&a)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  794
+ 
+{
+  ((d>b)>(b>b))
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  795
+ 
+{
+  (-d)
+} |=  ((c>c)&(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  796
+ 
+{
+  (b&b)
+} |=  ((c&b)>(b+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  797
+ 
+{
+  (b&a)
+} |=  ((-a)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  798
+ 
+{
+  (d+a)
+} |=  (b+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  799
+ 
+{
+  ((-b)>(c>b))
+} |=  ((-c)&(c&c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  800
+ 
+{
+  b
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  801
+ 
+{
+  (c+a)
+} |=  (-(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  802
+ 
+{
+  (c+c)
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  803
+ 
+{
+  (c+d)
+} |=  ((-b)+(a>a))
+Si es consecuencia logica
+ 
+ --------- Caso #  804
+ 
+{
+  ((-b)>(-a))
+} |=  (d&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  805
+ 
+{
+  b
+} |=  (-(a+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  806
+ 
+{
+  (b>b)
+} |=  ((-a)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  807
+ 
+{
+  a
+} |=  (-(a+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  808
+ 
+{
+  ((-a)>(-d))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  809
+ 
+{
+  (a>a)
+} |=  b
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  810
+ 
+{
+  (-(c>d))
+} |=  (c>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  811
+ 
+{
+  ((c>c)>(-c))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  812
+ 
+{
+  ((d>d)+(b>b))
+} |=  (b&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  813
+ 
+{
+  ((-c)+(-c))
+} |=  (c>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  814
+ 
+{
+  ((a>a)>(-a))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+ 
+ --------- Caso #  815
+ 
+{
+  (-(b+b))
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  816
+ 
+{
+  a
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  817
+ 
+{
+  ((-c)+(-a))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  818
+ 
+{
+  (a>d)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  819
+ 
+{
+  (-(a&b))
+} |=  ((-d)&(c+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  820
+ 
+{
+  c
+} |=  (a+c)
+Si es consecuencia logica
+ 
+ --------- Caso #  821
+ 
+{
+  c
+} |=  (-(b+b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  822
+ 
+{
+  (-(d+c))
+} |=  (c&d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  823
+ 
+{
+  a
+} |=  (c+a)
+Si es consecuencia logica
+ 
+ --------- Caso #  824
+ 
+{
+  (d>b)
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  825
+ 
+{
+  (c&c)
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  826
+ 
+{
+  (b&c)
+} |=  ((a&b)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  827
+ 
+{
+  c
+} |=  ((c>c)&(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  828
+ 
+{
+  ((b&b)+(c>b))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  829
+ 
+{
+  ((-b)>(-c))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  830
+ 
+{
+  (d>d)
+} |=  (-(c>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  831
+ 
+{
+  ((-a)>(-d))
+} |=  (-(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  832
+ 
+{
+  (-(c&c))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  833
+ 
+{
+  (-(b>b))
+} |=  (-(c+d))
+Si es consecuencia logica
+ 
+ --------- Caso #  834
+ 
+{
+  (c>a)
+} |=  ((-a)>(c>a))
+Si es consecuencia logica
+ 
+ --------- Caso #  835
+ 
+{
+  (d+d)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  836
+ 
+{
+  (-(a>a))
+} |=  (d>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  837
+ 
+{
+  c
+} |=  (a&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  838
+ 
+{
+  ((-c)+(-c))
+} |=  (d>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  839
+ 
+{
+  (d&b)
+} |=  (b&b)
+Si es consecuencia logica
+ 
+ --------- Caso #  840
+ 
+{
+  ((-b)+(-b))
+} |=  (a+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  841
+ 
+{
+  (b+a)
+} |=  (c&c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  842
+ 
+{
+  (-(-a))
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  843
+ 
+{
+  d
+} |=  (a+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  844
+ 
+{
+  a
+} |=  (a>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  845
+ 
+{
+  (d+a)
+} |=  (-c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  846
+ 
+{
+  d
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  847
+ 
+{
+  (b>d)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  848
+ 
+{
+  (-(c+b))
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  849
+ 
+{
+  (-(a+b))
+} |=  (a>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  850
+ 
+{
+  (d&a)
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  851
+ 
+{
+  ((c>c)&(-c))
+} |=  (-(a&d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  852
+ 
+{
+  d
+} |=  (-(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  853
+ 
+{
+  b
+} |=  ((d>b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  854
+ 
+{
+  (d&b)
+} |=  ((-a)>(a&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  855
+ 
+{
+  (-(b&c))
+} |=  (c+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  856
+ 
+{
+  ((-a)>(-d))
+} |=  ((b&d)>(-b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  857
+ 
+{
+  ((d>b)>(b>b))
+} |=  (-(c&c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  858
+ 
+{
+  (-(c+a))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  859
+ 
+{
+  (d&d)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+d evalua a  1
+ 
+ --------- Caso #  860
+ 
+{
+  d
+} |=  (d>c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  861
+ 
+{
+  d
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  862
+ 
+{
+  ((-b)>(-c))
+} |=  ((d>d)+(b>b))
+Si es consecuencia logica
+ 
+ --------- Caso #  863
+ 
+{
+  (-(c+c))
+} |=  (-(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  864
+ 
+{
+  (c+c)
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  865
+ 
+{
+  ((-b)&(a&b))
+} |=  ((a&b)>(-a))
+Si es consecuencia logica
+ 
+ --------- Caso #  866
+ 
+{
+  (a&a)
+} |=  (b>b)
+Si es consecuencia logica
+ 
+ --------- Caso #  867
+ 
+{
+  b
+} |=  (a+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  868
+ 
+{
+  (d+c)
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  869
+ 
+{
+  (a>b)
+} |=  ((d>b)+(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  870
+ 
+{
+  a
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  871
+ 
+{
+  ((a>a)>(-a))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  872
+ 
+{
+  ((d>b)+(-d))
+} |=  (d&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  873
+ 
+{
+  d
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  874
+ 
+{
+  d
+} |=  (-(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  875
+ 
+{
+  d
+} |=  (b>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  876
+ 
+{
+  (b>a)
+} |=  (c>a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  877
+ 
+{
+  c
+} |=  (-(d>c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  878
+ 
+{
+  (a+b)
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  879
+ 
+{
+  (b>b)
+} |=  (-(a+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  880
+ 
+{
+  ((c+d)>(-d))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  881
+ 
+{
+  (-d)
+} |=  (-(a+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  882
+ 
+{
+  c
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  883
+ 
+{
+  (b>a)
+} |=  ((c&b)>(b+b))
+Si es consecuencia logica
+ 
+ --------- Caso #  884
+ 
+{
+  (-(a+a))
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  885
+ 
+{
+  ((-b)>(-c))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  886
+ 
+{
+  ((-b)+(-b))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  887
+ 
+{
+  ((d&d)&(c&c))
+} |=  (b+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  888
+ 
+{
+  a
+} |=  (d>d)
+Si es consecuencia logica
+ 
+ --------- Caso #  889
+ 
+{
+  (-(d&c))
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  890
+ 
+{
+  (c+c)
+} |=  (b>d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  891
+ 
+{
+  ((-c)>(-c))
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  892
+ 
+{
+  ((-c)>(-c))
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  893
+ 
+{
+  d
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  894
+ 
+{
+  (c>a)
+} |=  (b&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  895
+ 
+{
+  a
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  896
+ 
+{
+  (a+c)
+} |=  (-(b+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  897
+ 
+{
+  (d&a)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  898
+ 
+{
+  (b+c)
+} |=  (-(a&c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  899
+ 
+{
+  (d&d)
+} |=  (-(a+c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  900
+ 
+{
+  b
+} |=  ((b>d)&(-b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  901
+ 
+{
+  ((a+a)&(-a))
+} |=  ((b&d)>(d&b))
+Si es consecuencia logica
+ 
+ --------- Caso #  902
+ 
+{
+  (a&d)
+} |=  (d>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  903
+ 
+{
+  ((-c)>(c+b))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  904
+ 
+{
+  ((c>d)+(d>d))
+} |=  ((-b)>(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  905
+ 
+{
+  (-b)
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+ 
+ --------- Caso #  906
+ 
+{
+  ((-a)>(d>d))
+} |=  ((a&d)+(-d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  907
+ 
+{
+  (a>d)
+} |=  (d+b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  908
+ 
+{
+  (-d)
+} |=  ((-a)+(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  909
+ 
+{
+  c
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  910
+ 
+{
+  (-(c+c))
+} |=  (-(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  911
+ 
+{
+  (b&c)
+} |=  (a&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  912
+ 
+{
+  a
+} |=  (b&b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  913
+ 
+{
+  (-d)
+} |=  (a&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  914
+ 
+{
+  c
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  915
+ 
+{
+  (-(b>b))
+} |=  (-(a>a))
+Si es consecuencia logica
+ 
+ --------- Caso #  916
+ 
+{
+  (-(c>c))
+} |=  (d&a)
+Si es consecuencia logica
+ 
+ --------- Caso #  917
+ 
+{
+  ((c&b)>(b+b))
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  918
+ 
+{
+  (a&a)
+} |=  a
+Si es consecuencia logica
+ 
+ --------- Caso #  919
+ 
+{
+  b
+} |=  ((-a)>(a&a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  920
+ 
+{
+  (b+b)
+} |=  d
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  921
+ 
+{
+  ((-c)&(c&c))
+} |=  (b&d)
+Si es consecuencia logica
+ 
+ --------- Caso #  922
+ 
+{
+  (a>a)
+} |=  (c>b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  923
+ 
+{
+  ((-c)>(-d))
+} |=  (-(d&b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  924
+ 
+{
+  (-(a+a))
+} |=  ((d>b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  925
+ 
+{
+  ((c>c)>(-c))
+} |=  (-(a+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  926
+ 
+{
+  (d>d)
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  927
+ 
+{
+  (d&b)
+} |=  (-(d+a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  928
+ 
+{
+  d
+} |=  (a>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  929
+ 
+{
+  (d&a)
+} |=  (-(a&d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  930
+ 
+{
+  (-(-b))
+} |=  ((-c)>(c&d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  931
+ 
+{
+  ((-a)&(-b))
+} |=  ((-b)+(a>a))
+Si es consecuencia logica
+ 
+ --------- Caso #  932
+ 
+{
+  c
+} |=  (b&d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  933
+ 
+{
+  ((-b)+(-b))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+ 
+ --------- Caso #  934
+ 
+{
+  (c&d)
+} |=  (c+a)
+Si es consecuencia logica
+ 
+ --------- Caso #  935
+ 
+{
+  (-(a>a))
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  936
+ 
+{
+  (d+d)
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  937
+ 
+{
+  (d+d)
+} |=  (-(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  938
+ 
+{
+  (b&a)
+} |=  ((-a)&(-c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  939
+ 
+{
+  (d&b)
+} |=  (c+d)
+Si es consecuencia logica
+ 
+ --------- Caso #  940
+ 
+{
+  (-(c>a))
+} |=  d
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  941
+ 
+{
+  (b+b)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+ 
+ --------- Caso #  942
+ 
+{
+  (-(-c))
+} |=  (a&d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  943
+ 
+{
+  (-(c+a))
+} |=  (d+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  944
+ 
+{
+  b
+} |=  ((-c)>(-c))
+Si es consecuencia logica
+ 
+ --------- Caso #  945
+ 
+{
+  (c+c)
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  946
+ 
+{
+  ((c>c)&(-c))
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  947
+ 
+{
+  (-b)
+} |=  (c&c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  948
+ 
+{
+  (d>d)
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  949
+ 
+{
+  d
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  950
+ 
+{
+  ((b>c)+(-b))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  951
+ 
+{
+  a
+} |=  (d+c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  952
+ 
+{
+  (-(-a))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  953
+ 
+{
+  b
+} |=  ((b>d)+(-d))
+Si es consecuencia logica
+ 
+ --------- Caso #  954
+ 
+{
+  (-(c>b))
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  955
+ 
+{
+  d
+} |=  (a>c)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  956
+ 
+{
+  (a&a)
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+ 
+ --------- Caso #  957
+ 
+{
+  d
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  958
+ 
+{
+  (d&d)
+} |=  (c&c)
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  959
+ 
+{
+  (b&d)
+} |=  ((a>a)&(d>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  960
+ 
+{
+  (d+d)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  961
+ 
+{
+  (c&b)
+} |=  (b>d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  962
+ 
+{
+  (-(a+a))
+} |=  (a>a)
+Si es consecuencia logica
+ 
+ --------- Caso #  963
+ 
+{
+  ((-d)+(-d))
+} |=  ((-c)&(c&c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  964
+ 
+{
+  (-(a+a))
+} |=  (-(c&c))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  965
+ 
+{
+  (-(c>c))
+} |=  d
+Si es consecuencia logica
+ 
+ --------- Caso #  966
+ 
+{
+  (b+c)
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  967
+ 
+{
+  (-(c>d))
+} |=  c
+Si es consecuencia logica
+ 
+ --------- Caso #  968
+ 
+{
+  (-c)
+} |=  c
+No es consecuencia logica
+Contraejemplo
+c evalua a  0
+ 
+ --------- Caso #  969
+ 
+{
+  b
+} |=  (d>c)
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  970
+ 
+{
+  (c>c)
+} |=  (d&a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  971
+ 
+{
+  (d>d)
+} |=  (-(a+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  972
+ 
+{
+  (b&b)
+} |=  (-(a&d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  973
+ 
+{
+  c
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+ 
+ --------- Caso #  974
+ 
+{
+  (a+b)
+} |=  (d+d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  975
+ 
+{
+  ((-b)+(a>a))
+} |=  ((d>b)+(-b))
+Si es consecuencia logica
+ 
+ --------- Caso #  976
+ 
+{
+  c
+} |=  ((c>c)>(-c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+ 
+ --------- Caso #  977
+ 
+{
+  b
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  978
+ 
+{
+  ((-a)>(a&a))
+} |=  ((-c)>(c+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+c evalua a  0
+ 
+ --------- Caso #  979
+ 
+{
+  (d+d)
+} |=  (b+b)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  980
+ 
+{
+  (b>b)
+} |=  ((-b)>(-a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  981
+ 
+{
+  (-(a+b))
+} |=  (-(c+d))
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  982
+ 
+{
+  (d>c)
+} |=  (a+a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  983
+ 
+{
+  d
+} |=  (-(c>c))
+No es consecuencia logica
+Contraejemplo
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  984
+ 
+{
+  ((b&c)>(-c))
+} |=  c
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  0
+ 
+ --------- Caso #  985
+ 
+{
+  a
+} |=  (-(b>a))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  986
+ 
+{
+  (-(-a))
+} |=  (b>d)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  987
+ 
+{
+  (b+a)
+} |=  (-(a+b))
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  988
+ 
+{
+  ((d>b)+(-d))
+} |=  b
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+d evalua a  0
+ 
+ --------- Caso #  989
+ 
+{
+  d
+} |=  (c>c)
+Si es consecuencia logica
+ 
+ --------- Caso #  990
+ 
+{
+  (-(b>b))
+} |=  (-b)
+Si es consecuencia logica
+ 
+ --------- Caso #  991
+ 
+{
+  (-(b&a))
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  0
+ 
+ --------- Caso #  992
+ 
+{
+  (c+d)
+} |=  ((-b)>(c>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  993
+ 
+{
+  (b&b)
+} |=  (-a)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  994
+ 
+{
+  d
+} |=  a
+No es consecuencia logica
+Contraejemplo
+a evalua a  0
+d evalua a  1
+ 
+ --------- Caso #  995
+ 
+{
+  (-d)
+} |=  (-(c>b))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+d evalua a  0
+ 
+ --------- Caso #  996
+ 
+{
+  (a+b)
+} |=  (-b)
+No es consecuencia logica
+Contraejemplo
+a evalua a  1
+b evalua a  1
+ 
+ --------- Caso #  997
+ 
+{
+  ((b&d)>(d&b))
+} |=  ((-d)+(-d))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+d evalua a  1
+ 
+ --------- Caso #  998
+ 
+{
+  c
+} |=  (-(b>c))
+No es consecuencia logica
+Contraejemplo
+b evalua a  1
+c evalua a  1
+ 
+ --------- Caso #  999
+ 
+{
+  ((c>b)>(-c))
+} |=  (-d)
+No es consecuencia logica
+Contraejemplo
+b evalua a  0
+c evalua a  1
+d evalua a  1
+
+Resumen de casos
+ Si, No =( 241 , 759 )
